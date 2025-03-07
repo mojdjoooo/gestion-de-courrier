@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@200;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+//all project colors
+:root {
+    --purple-electric: #634AE2;
+    --light-purple-electric: #a696f7dd;
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+    //font ang typography/
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0, 813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRaduis: 3rem;
+}
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    margin: 0;
+}
+
+
+.Accueil {
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+}
+.header {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    // margin-top: 20px; // Ajuste la marge si nécessaire
+    background: linear-gradient(#24D9E5,#634AE2);
+ 
+}
+header{
+    top: 0;
+    margin-top: 0;
+    
+}
+
+
+.logo {
+    position: absolute;
+    left: 20px; // Ajuste la marge par rapport au bord gauche
+    top: 10px;
+    width: 60px; // Ajuste la taille du logo
+    height: auto;
+}
+div {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff45;
+    margin: 0;
+    padding: 3.25em;
+    box-sizing: border-box;
+    border: solid 1px #ddd;
+    border-radius: 0.5em;
+    font-family: "Source Sans Pro", sans-serif;
+
+    .h4{
+        margin-bottom: 10px;
+    }
+    
+  }
+  .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    border-bottom: 1.5px solid rgb(211, 211, 211);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+
+    @media screen  {
+        .menu{
+            
+            position: absolute;
+            width: 70%;
+            top: -100rem;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            background: rgba(255, 255, 255, 0.94);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: .8s ease-in-out;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+
+            li{
+                font-size: var(--h3FontSize);
+                font-weight: 500;
+                padding: 3rem 0;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    color: var(--purple-electric);
+                    border-bottom: 1.5px solid var(--purple-electric);
+                }
+            }
+        }
+        
+    }
+    .menuIcon{
+        font-size: var(--h1FontSize);
+        &:hover{
+            color: var(--greenPrimary);
+        }
+    }
+
+
+    
+
+ 
+  
+  
